@@ -1,0 +1,101 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+.lessons-wrap {
+  position: relative;
+  width:60%;
+  margin: auto;
+  margin-top: 50px;
+}
+.lesson-link {
+  text-decoration: none;
+}
+.lesson {
+  position: relative;
+  width:100%;
+  display: block;
+  margin-bottom:35px;
+  background-color: #ECECEC;
+}
+.lesson::after {
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width:5px;
+  background-color: #2496E2;
+  transition: all .15s ease-in-out;
+}
+.lesson:hover::after {
+  background-color: #334047;
+  width:7px;
+}
+.lesson-text {
+  display: block;
+  width:90%;
+  left:5%;
+  position: relative;
+}
+.lesson-title {
+  position: relative;
+  font-size: 30px;
+  font-family: 'roboto';
+  color:rgba(38, 50, 56, 0.88);
+  font-weight: 700;
+  padding-top: 15px;
+  line-height: 50px;
+}
+.lesson-category-link {
+  text-decoration: none;
+  color:#2496E2;
+  cursor: pointer;
+  font-style: normal;
+}
+.lesson-category {
+  position: relative;
+  font-weight: 300;
+  font-family: 'roboto';
+  color:#2496E2;
+  line-height: 30px;
+  margin-bottom: 7px;
+}
+.lesson-category-link:hover {
+  text-decoration: underline;
+}
+.lesson-description-text {
+  position: relative;
+  color:#6a6a6a;
+  line-height: 22px;
+  padding-bottom: 15px;
+}
+.enroll-button {
+  position: relative;
+  width:200px;
+  font-size: 20px;
+  font-family: 'roboto';
+  font-weight: 300;
+  text-decoration: none;
+  color:white;
+  background-color: #2496E2;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 222px;
+  left:calc(50% - 100px);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+  transition: all .15s ease-in-out;
+}
+.enroll-button:hover {
+  background-color: #263238;
+}
+@media screen and (max-width:920px){
+  .lessons-wrap {
+    width:90%;
+    margin-top: 20px;
+  }
+  .page-title {
+    line-height: 80px;
+  }
+}
