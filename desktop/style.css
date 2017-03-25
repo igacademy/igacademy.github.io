@@ -159,7 +159,7 @@ footer {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  width:calc(100% / 3);
+  width:33.3%;
   float: left;
   font-size: .8vw;
   line-height: 45px;
